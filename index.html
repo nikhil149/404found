@@ -24,72 +24,117 @@
     <title>Nikhil Rachawar</title>
 
     <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
       body {
         font-family: "Poppins", sans-serif;
+        height: 100vh;
+      }
+      img {
+        max-width: 100%;
+      }
+      .btn {
+        background: #333333;
+        font-family: "Space Mono";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 0.8em;
+        line-height: 21px;
+        /* identical to box height */
+
+        letter-spacing: -0.035em;
+        padding: 1.5em 2.5em;
+        text-transform: uppercase;
+
+        color: #ffffff;
+      }
+      .main {
+        /* padding: 8rem 0; */
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100vh;
+        gap: 3rem;
+      }
+      .img_div {
+        width: 40%;
       }
 
-      ul {
-        padding-left: 24px;
+      .section {
+        /* align-self: flex-start; */
+        width: 40%;
+      }
+      .header {
+        font-family: "Space Mono";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 4rem;
+        line-height: 6rem;
+        letter-spacing: -0.035em;
+
+        /* Gray 1 */
+
+        color: #333333;
       }
 
-      li {
-        margin-bottom: 8px;
-      }
-
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
-
-      .welcome-text p {
-        font-size: 1rem;
+      .content {
+        font-family: "Space Mono";
+        font-style: normal;
         font-weight: 400;
-      }
-
-      .welcome-text h1 {
         font-size: 1.5rem;
-      }
+        line-height: 2.25rem;
+        letter-spacing: -0.035em;
 
-      .welcome-text a {
-        color: #f7542e;
+        /* Gray 2 */
+
+        color: #4f4f4f;
+      }
+      @media (max-width: 500px) {
+        .main {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: 5%;
+        }
+        .img_div {
+          width: 100%;
+        }
+        .section {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 3rem;
+        }
+        .header {
+          font-size: 3rem;
+          line-height: 4.5rem;
+        }
+        .content {
+          line-height: 1.75rem;
+          font-size: 1.2rem;
+        }
+        .btn {
+          max-width: 62%;
+        }
       }
     </style>
   </head>
   <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
-
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
-        </p>
+    <main class="main">
+      <div class="img_div">
+        <img src="./Scarecrow.png" alt="scarecrow" />
       </div>
-
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
-    </div>
+      <section class="section">
+        <h1 class="header">I have bad news for you</h1>
+        <p class="content">
+          The page you are looking for might be removed or is temporarily
+          unavailable
+        </p>
+        <button class="btn">Back to homepage</button>
+      </section>
+    </main>
   </body>
 </html>
