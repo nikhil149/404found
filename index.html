@@ -24,13 +24,14 @@
     <title>Nikhil Rachawar</title>
 
     <style>
+      @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
       * {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
       }
       body {
-        font-family: "Poppins", sans-serif;
+        font-family: 'Space Mono', monospace;
         height: 100vh;
       }
       img {
@@ -52,7 +53,7 @@
         color: #ffffff;
       }
       .main {
-        /* padding: 8rem 0; */
+        padding: 3rem;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -60,12 +61,12 @@
         gap: 3rem;
       }
       .img_div {
-        width: 40%;
+        flex: 1;
       }
 
       .section {
         /* align-self: flex-start; */
-        width: 40%;
+        flex: 1;
       }
       .header {
         font-family: "Space Mono";
@@ -92,15 +93,17 @@
 
         color: #4f4f4f;
       }
-      @media (max-width: 500px) {
+      @media (max-width: 650px) {
         .main {
           flex-direction: column;
           justify-content: center;
           align-items: center;
           margin: 5%;
+          padding: 0%;
         }
         .img_div {
           width: 100%;
+          margin-top: 20%;
         }
         .section {
           width: 100%;
