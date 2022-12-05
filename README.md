@@ -35,7 +35,8 @@
 <!-- OVERVIEW -->
 
 ## Overview
-![image](https://user-images.githubusercontent.com/78250252/205557384-81208ae4-59d0-4a4d-a806-553ddc34108f.png)
+<img width="1512" alt="image" src="https://user-images.githubusercontent.com/78250252/205559058-eaad6995-ba4a-402b-b86e-ba598a1f2023.png">
+
 
 
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
